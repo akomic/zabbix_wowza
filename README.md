@@ -20,13 +20,13 @@ Include=/etc/zabbix/zabbix_agentd.conf.d/
 
 ## Zabbix Configuration
 
-- Import template into zabbix in Template section of web gui
-- Add the template to the host
-- Add following macros to the host on Zabbix web gui
-.* {$WOWZAHOST}
+### Import template into zabbix in Template section of web gui
+### Add the template to the host
+### Add following macros to the host on Zabbix web gui
+- {$WOWZAHOST}
 ...hostname or ip address of the Wowza Media Server
-.* {$WOWZAUSER} 
-.* {$WOWZAPASS}
+- {$WOWZAUSER} 
+- {$WOWZAPASS}
 ...Username and password defined in the Wowza admin password file
 
 ## Wowza Media Server Configuration
