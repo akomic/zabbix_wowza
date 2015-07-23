@@ -25,12 +25,12 @@ Include=/etc/zabbix/zabbix_agentd.conf.d/
 ### Add following macros to the host on Zabbix web gui
 * {$WOWZAHOST}
 
-...hostname or ip address of the Wowza Media Server
+   hostname or ip address of the Wowza Media Server
 
 * {$WOWZAUSER} 
 * {$WOWZAPASS}
 
-...Username and password defined in the Wowza admin password file
+   Username and password defined in the Wowza admin password file
 
 ## Wowza Media Server Configuration
 
