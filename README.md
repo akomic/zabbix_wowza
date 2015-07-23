@@ -1,6 +1,6 @@
 #zabbix_wowza
 
-Zabbix template for Wowza Media Server with Template
+Zabbix template for Wowza Media Server
 
 ## Install
 This is installed on the host you are running the zabbix agent on and that's capable of connecting to Wowza Media Server you would like to monitor.
@@ -20,14 +20,14 @@ Include=/etc/zabbix/zabbix_agentd.conf.d/
 
 ## Zabbix Configuration
 
-** Import template into zabbix in Template section of web gui
-** Add the template to the host
-** Add following macros to the host on Zabbix web gui
-hostname or ip address of the Wowza Media Server
-*** {$WOWZAHOST}
-Username and password defined in the Wowza admin password file
-*** {$WOWZAUSER} 
-*** {$WOWZAPASS}
+- Import template into zabbix in Template section of web gui
+- Add the template to the host
+- Add following macros to the host on Zabbix web gui
+-- {$WOWZAHOST}
+...hostname or ip address of the Wowza Media Server
+-- {$WOWZAUSER} 
+-- {$WOWZAPASS}
+...Username and password defined in the Wowza admin password file
 
 ## Wowza Media Server Configuration
 
