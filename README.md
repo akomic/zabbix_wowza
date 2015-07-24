@@ -1,6 +1,9 @@
 #zabbix_wowza
 
-Zabbix template for Wowza Media Server
+Zabbix template for Wowza Media Server.
+HTTP requests to Wowza Media Server are cached locally to avoid querying server for each key retrieved.
+Requests are made once for all counters and cached for 295 seconds.
+To reduce update interval for each item reduce the caching time of the wowza_stats.py script by passing --ttl value or change it in the script.
 
 ## Install
 This is installed on the host you are running the zabbix agent on and that's capable of connecting to Wowza Media Server you would like to monitor.
