@@ -46,3 +46,5 @@ Make sure that this HTTP Provider is configured in the Wowza VHost.xml file
         <AuthenticationMethod>admin-digest</AuthenticationMethod>
 </HTTPProvider>
 ```
+
+Add username and password to admin.password file in Wowza configuration directory.
